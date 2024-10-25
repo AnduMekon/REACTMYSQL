@@ -1,0 +1,120 @@
+/* app.css */
+
+/* General layout styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f8f7;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container for the table */
+div {
+  margin: auto;
+  max-width: 1000px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 128, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+div:hover {
+  box-shadow: 0 6px 30px rgba(0, 128, 0, 0.2);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+thead {
+  background-color: #28a745;
+  color: white;
+  text-align: left;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #218838;
+  color: #ffffff;
+}
+
+/* Table body rows */
+tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Zebra striping for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f0f9f0;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+  background-color: #dff4df;
+}
+
+/* Focus effect when using keyboard navigation */
+tbody tr:focus-within {
+  background-color: #b4e4b4;
+}
+
+/* Table cell styling */
+td {
+  font-size: 16px;
+  color: #2f4f2f;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+  div {
+    padding: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+}
+
+/* Small devices */
+@media (max-width: 576px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+}
